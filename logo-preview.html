@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Logo - Eco Track</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1F2937;
+            margin-bottom: 40px;
+        }
+        
+        .logo-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .logo-box {
+            padding: 30px;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-box:hover {
+            border-color: #10B981;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+        }
+        
+        .logo-box h3 {
+            margin: 0 0 20px 0;
+            color: #374151;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px;
+            background: #F9FAFB;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .logo-display img {
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.2));
+        }
+        
+        .logo-display.white-bg {
+            background: white;
+        }
+        
+        .logo-display.dark-bg {
+            background: #1F2937;
+        }
+        
+        .logo-display.gradient-bg {
+            background: linear-gradient(135deg, #10B981 0%, #3B82F6 100%);
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #10B981, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-text.white {
+            background: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .size-info {
+            font-size: 12px;
+            color: #6B7280;
+            margin-top: 10px;
+        }
+        
+        .preview-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #10B981, #3B82F6);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .preview-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        .success-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: #D1FAE5;
+            color: #065F46;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .success-badge::before {
+            content: "✓";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #10B981;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-badge">
+            Logo integrado com sucesso!
+        </div>
+        
+        <h1>🎨 Eco Track - Showcase do Logo</h1>
+        
+        <div class="logo-showcase">
+            <!-- Logo Pequeno -->
+            <div class="logo-box">
+                <h3>Logo Pequeno (40px)</h3>
+                <div class="logo-display white-bg">
+                    <img src="img/logo.png" alt="Logo" width="40" height="40">
+                    <span class="logo-text" style="font-size: 18px;">Eco Track</span>
+                </div>
+                <div class="size-info">Usado em: Mobile, Favicon</div>
+            </div>
+            
+            <!-- Logo Médio -->
+            <div class="logo-box">
+                <h3>Logo Médio (50px)</h3>
+                <div class="logo-display white-bg">
+                    <img src="img/logo.png" alt="Logo" width="50" height="50">
+                    <span class="logo-text">Eco Track</span>
+                </div>
+                <div class="size-info">Usado em: Header, Footer</div>
+            </div>
+            
+            <!-- Logo Grande -->
+            <div class="logo-box">
+                <h3>Logo Grande (80px)</h3>
+                <div class="logo-display white-bg">
+                    <img src="img/logo.png" alt="Logo" width="80" height="80">
+                    <span class="logo-text" style="font-size: 32px;">Eco Track</span>
+                </div>
+                <div class="size-info">Usado em: Hero, Landing</div>
+            </div>
+        </div>
+        
+        <div class="logo-showcase">
+            <!-- Logo em Fundo Escuro -->
+            <div class="logo-box">
+                <h3>Fundo Escuro</h3>
+                <div class="logo-display dark-bg">
+                    <img src="img/logo.png" alt="Logo" width="50" height="50">
+                    <span class="logo-text white">Eco Track</span>
+                </div>
+                <div class="size-info">Footer, Dark Mode</div>
+            </div>
+            
+            <!-- Logo em Gradiente -->
+            <div class="logo-box">
+                <h3>Fundo Gradiente</h3>
+                <div class="logo-display gradient-bg">
+                    <img src="img/logo.png" alt="Logo" width="50" height="50">
+                    <span class="logo-text white">Eco Track</span>
+                </div>
+                <div class="size-info">Banners, CTAs</div>
+            </div>
+            
+            <!-- Logo Sozinho -->
+            <div class="logo-box">
+                <h3>Logo Isolado</h3>
+                <div class="logo-display white-bg">
+                    <img src="img/logo.png" alt="Logo" width="80" height="80">
+                </div>
+                <div class="size-info">App Icon, Watermark</div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="preview-link">
+            🚀 Ver Site Completo com Logo Integrado
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eco Track - Transforme consumo em economia e sustentabilidade com tecnologia IoT inteligente">
+    <title>Eco Track | Medição Inteligente de Recursos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/hero.css">
+    <link rel="stylesheet" href="components/how-it-works.css">
+    <link rel="stylesheet" href="components/demo.css">
+    <link rel="stylesheet" href="components/pricing.css">
+    <link rel="stylesheet" href="components/about.css">
+    <link rel="stylesheet" href="components/footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="img/logo.png" alt="Eco Track Logo" class="logo-image">
+                <span class="logo-text">Eco Track</span>
+            </a>
+            
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#como-funciona" class="nav__link">Como Funciona</a></li>
+                <li class="nav__item"><a href="#demonstracao" class="nav__link">Demonstração</a></li>
+                <li class="nav__item"><a href="#planos" class="nav__link">Planos</a></li>
+                <li class="nav__item"><a href="#sobre" class="nav__link">Sobre Nós</a></li>
+            </ul>
+            
+            <div class="nav__actions">
+                <a href="#contato" class="btn btn--ghost">Contato</a>
+                <a href="#planos" class="btn btn--primary">Começar Agora</a>
+            </div>
+            
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__background">
+            <div class="hero__gradient"></div>
+            <div class="hero__particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="badge-icon">🌱</span>
+                    <span>Tecnologia Sustentável</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    Transforme <span class="gradient-text">Consumo</span> em 
+                    <span class="gradient-text">Economia</span> e 
+                    <span class="gradient-text">Sustentabilidade</span>
+                </h1>
+                
+                <p class="hero__description">
+                    Monitore e otimize o consumo de energia, água e gás em tempo real com nossa plataforma IoT inteligente. 
+                    Economize até 40% e contribua para um planeta mais verde.
+                </p>
+                
+                <div class="hero__actions">
+                    <a href="#demonstracao" class="btn btn--primary btn--large">
+                        <span>Ver Demonstração</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#planos" class="btn btn--outline btn--large">
+                        <span>Conhecer Planos</span>
+                    </a>
+                </div>
+                
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__number">40%</div>
+                        <div class="stat__label">Redução de Custos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">24/7</div>
+                        <div class="stat__label">Monitoramento</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">100%</div>
+                        <div class="stat__label">Sustentável</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-card">
+                        <div class="card-icon energy">⚡</div>
+                        <div class="card-data">
+                            <span class="card-label">Energia</span>
+                            <span class="card-value">320 kWh</span>
+                            <span class="card-trend down">-12%</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon water">💧</div>
+                        <div class="card-data">
+                            <span class="card-label">Água</span>
+                            <span class="card-value">15 m³</span>
+                            <span class="card-trend down">-8%</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon gas">🔥</div>
+                        <div class="card-data">
+                            <span class="card-label">Gás</span>
+                            <span class="card-value">22 m³</span>
+                            <span class="card-trend down">-15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Role para descobrir</span>
+            <svg width="20" height="20" viewBox="0 0 20 20">
+                <path d="M10 5V15M10 15L5 10M10 15L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Como Funciona</span>
+                <h2 class="section-title">Tecnologia <span class="gradient-text">IoT Inteligente</span></h2>
+                <p class="section-description">
+                    Nossa solução integra sensores IoT avançados para monitorar e otimizar seus recursos em tempo real
+                </p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step__number">01</div>
+                    <div class="step__icon">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="url(#step1-gradient)" stroke-width="2"/>
+                            <path d="M30 15V30L40 35" stroke="url(#step1-gradient)" stroke-width="3" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="step1-gradient">
+                                    <stop offset="0%" stop-color="#10B981"/>
+                                    <stop offset="100%" stop-color="#3B82F6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="step__title">Instalação Simples</h3>
+                    <p class="step__description">
+                        Sensores IoT são instalados nos pontos de consumo de energia, água e gás. 
+                        Processo rápido e não invasivo.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">02</div>
+                    <div class="step__icon">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <rect x="10" y="15" width="40" height="30" rx="4" stroke="url(#step2-gradient)" stroke-width="2"/>
+                            <path d="M20 25L30 32L40 25" stroke="url(#step2-gradient)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="step2-gradient">
+                                    <stop offset="0%" stop-color="#3B82F6"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="step__title">Coleta de Dados</h3>
+                    <p class="step__description">
+                        Medição precisa em tempo real de todo consumo. Dados são transmitidos 
+                        de forma segura para a nuvem.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">03</div>
+                    <div class="step__icon">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <path d="M15 35L25 25L35 30L45 20" stroke="url(#step3-gradient)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="25" cy="25" r="3" fill="url(#step3-gradient)"/>
+                            <circle cx="35" cy="30" r="3" fill="url(#step3-gradient)"/>
+                            <defs>
+                                <linearGradient id="step3-gradient">
+                                    <stop offset="0%" stop-color="#F59E0B"/>
+                                    <stop offset="100%" stop-color="#EF4444"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="step__title">Análise Inteligente</h3>
+                    <p class="step__description">
+                        IA processa os dados, identifica padrões e gera insights acionáveis 
+                        para otimização de consumo.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">04</div>
+                    <div class="step__icon">
+                        <svg viewBox="0 0 60 60" fill="none">
+                            <path d="M30 15L35 25H45L37 32L40 42L30 35L20 42L23 32L15 25H25L30 15Z" stroke="url(#step4-gradient)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="step4-gradient">
+                                    <stop offset="0%" stop-color="#10B981"/>
+                                    <stop offset="100%" stop-color="#F59E0B"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="step__title">Economia Real</h3>
+                    <p class="step__description">
+                        Receba alertas, sugestões e automatize processos. Reduza custos e 
+                        contribua para a sustentabilidade.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Energia</h4>
+                    <p>Monitore kWh em tempo real e identifique equipamentos com alto consumo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💧</div>
+                    <h4>Água</h4>
+                    <p>Detecte vazamentos e otimize o uso de recursos hídricos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h4>Gás</h4>
+                    <p>Acompanhe consumo e receba alertas de anomalias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demonstracao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Demonstração</span>
+                <h2 class="section-title">Veja a <span class="gradient-text">Plataforma</span> em Ação</h2>
+                <p class="section-description">
+                    Interface intuitiva com dados em tempo real, análises detalhadas e automação inteligente
+                </p>
+            </div>
+            
+            <div class="demo-tabs">
+                <button class="demo-tab active" data-tab="dashboard">Dashboard</button>
+                <button class="demo-tab" data-tab="analytics">Análises</button>
+                <button class="demo-tab" data-tab="alerts">Alertas</button>
+                <button class="demo-tab" data-tab="ranking">Ranking</button>
+            </div>
+            
+            <div class="demo-content">
+                <div class="demo-panel active" id="dashboard">
+                    <div class="demo-screen">
+                        <div class="screen-header">
+                            <div class="screen-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="screen-title">Dashboard Principal</span>
+                        </div>
+                        <div class="screen-body">
+                            <div class="metrics-row">
+                                <div class="metric-box energy">
+                                    <div class="metric-icon">⚡</div>
+                                    <div class="metric-info">
+                                        <span class="metric-label">Energia Hoje</span>
+                                        <span class="metric-value">28.5 kWh</span>
+                                        <span class="metric-change negative">-12.3%</span>
+                                    </div>
+                                    <div class="metric-chart">
+                                        <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                            <polyline points="0,25 20,22 40,18 60,20 80,15 100,12" stroke="#10B981" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="metric-box water">
+                                    <div class="metric-icon">💧</div>
+                                    <div class="metric-info">
+                                        <span class="metric-label">Água Hoje</span>
+                                        <span class="metric-value">450 L</span>
+                                        <span class="metric-change negative">-8.7%</span>
+                                    </div>
+                                    <div class="metric-chart">
+                                        <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                            <polyline points="0,20 20,18 40,22 60,19 80,17 100,15" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="metric-box gas">
+                                    <div class="metric-icon">🔥</div>
+                                    <div class="metric-info">
+                                        <span class="metric-label">Gás Hoje</span>
+                                        <span class="metric-value">1.2 m³</span>
+                                        <span class="metric-change negative">-15.2%</span>
+                                    </div>
+                                    <div class="metric-chart">
+                                        <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                            <polyline points="0,28 20,24 40,20 60,18 80,16 100,14" stroke="#F59E0B" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <div class="chart-header">
+                                    <h4>Consumo Semanal</h4>
+                                    <div class="chart-legend">
+                                        <span><i style="background: #10B981"></i> Energia</span>
+                                        <span><i style="background: #3B82F6"></i> Água</span>
+                                        <span><i style="background: #F59E0B"></i> Gás</span>
+                                    </div>
+                                </div>
+                                <div class="chart-bars">
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 70%"></div>
+                                            <div class="bar water" style="height: 50%"></div>
+                                            <div class="bar gas" style="height: 30%"></div>
+                                        </div>
+                                        <span>Seg</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 65%"></div>
+                                            <div class="bar water" style="height: 55%"></div>
+                                            <div class="bar gas" style="height: 35%"></div>
+                                        </div>
+                                        <span>Ter</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 80%"></div>
+                                            <div class="bar water" style="height: 60%"></div>
+                                            <div class="bar gas" style="height: 40%"></div>
+                                        </div>
+                                        <span>Qua</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 60%"></div>
+                                            <div class="bar water" style="height: 45%"></div>
+                                            <div class="bar gas" style="height: 28%"></div>
+                                        </div>
+                                        <span>Qui</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 75%"></div>
+                                            <div class="bar water" style="height: 52%"></div>
+                                            <div class="bar gas" style="height: 38%"></div>
+                                        </div>
+                                        <span>Sex</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 50%"></div>
+                                            <div class="bar water" style="height: 48%"></div>
+                                            <div class="bar gas" style="height: 25%"></div>
+                                        </div>
+                                        <span>Sáb</span>
+                                    </div>
+                                    <div class="chart-day">
+                                        <div class="bars">
+                                            <div class="bar energy" style="height: 45%"></div>
+                                            <div class="bar water" style="height: 42%"></div>
+                                            <div class="bar gas" style="height: 22%"></div>
+                                        </div>
+                                        <span>Dom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="analytics">
+                    <div class="analytics-grid">
+                        <div class="analytics-card">
+                            <h4>📊 Relatórios Detalhados</h4>
+                            <p>Análises completas de consumo por período, comparativos e tendências</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h4>🎯 Metas de Economia</h4>
+                            <p>Defina objetivos e acompanhe seu progresso em tempo real</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h4>💰 Economia Acumulada</h4>
+                            <p>Veja quanto você já economizou com a Eco Track</p>
+                            <div class="savings-amount">R$ 1.245,00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="alerts">
+                    <div class="alerts-list">
+                        <div class="alert-item warning">
+                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-content">
+                                <h4>Consumo elevado detectado</h4>
+                                <p>Ar condicionado utilizando 35% acima da média</p>
+                                <span class="alert-time">Há 15 minutos</span>
+                            </div>
+                        </div>
+                        <div class="alert-item success">
+                            <div class="alert-icon">✅</div>
+                            <div class="alert-content">
+                                <h4>Meta alcançada!</h4>
+                                <p>Redução de 15% no consumo de água este mês</p>
+                                <span class="alert-time">Há 2 horas</span>
+                            </div>
+                        </div>
+                        <div class="alert-item info">
+                            <div class="alert-icon">💡</div>
+                            <div class="alert-content">
+                                <h4>Sugestão de otimização</h4>
+                                <p>Programe o aquecedor para horários de tarifa reduzida</p>
+                                <span class="alert-time">Há 5 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="ranking">
+                    <div class="ranking-list">
+                        <div class="ranking-item gold">
+                            <div class="ranking-position">🥇</div>
+                            <div class="ranking-info">
+                                <span class="ranking-name">Você</span>
+                                <span class="ranking-score">95% eficiência</span>
+                            </div>
+                            <div class="ranking-badge">Top 1%</div>
+                        </div>
+                        <div class="ranking-item silver">
+                            <div class="ranking-position">🥈</div>
+                            <div class="ranking-info">
+                                <span class="ranking-name">Empresa Verde Ltda</span>
+                                <span class="ranking-score">92% eficiência</span>
+                            </div>
+                        </div>
+                        <div class="ranking-item bronze">
+                            <div class="ranking-position">🥉</div>
+                            <div class="ranking-info">
+                                <span class="ranking-name">Sustentável S.A.</span>
+                                <span class="ranking-score">88% eficiência</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="planos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Planos e Preços</span>
+                <h2 class="section-title">Escolha o <span class="gradient-text">Plano Ideal</span></h2>
+                <p class="section-description">
+                    Soluções flexíveis para residências, empresas e indústrias
+                </p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <button class="toggle-btn active" data-plan="monthly">Mensal</button>
+                <button class="toggle-btn" data-plan="yearly">Anual <span class="discount-badge">-20%</span></button>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Residencial</h3>
+                        <p>Para casas e apartamentos</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount monthly-price">79</span>
+                        <span class="amount yearly-price hidden">63</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Monitoramento de até 3 recursos</li>
+                        <li>✓ Dashboard em tempo real</li>
+                        <li>✓ Alertas básicos</li>
+                        <li>✓ Relatórios mensais</li>
+                        <li>✓ Suporte por email</li>
+                    </ul>
+                    <a href="#" class="btn btn--outline btn--full">Escolher Plano</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3>Empresarial</h3>
+                        <p>Para pequenas e médias empresas</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount monthly-price">199</span>
+                        <span class="amount yearly-price hidden">159</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Monitoramento ilimitado</li>
+                        <li>✓ Dashboard avançado</li>
+                        <li>✓ Alertas inteligentes + IA</li>
+                        <li>✓ Relatórios personalizados</li>
+                        <li>✓ Análises preditivas</li>
+                        <li>✓ API para integração</li>
+                        <li>✓ Suporte prioritário 24/7</li>
+                    </ul>
+                    <a href="#" class="btn btn--primary btn--full">Escolher Plano</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Industrial</h3>
+                        <p>Para grandes empresas e indústrias</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">Sob consulta</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tudo do plano Empresarial</li>
+                        <li>✓ Múltiplas unidades</li>
+                        <li>✓ Consultoria especializada</li>
+                        <li>✓ Automação avançada</li>
+                        <li>✓ Integração ERP</li>
+                        <li>✓ Treinamento da equipe</li>
+                        <li>✓ Gerente de conta dedicado</li>
+                    </ul>
+                    <a href="#" class="btn btn--outline btn--full">Falar com Vendas</a>
+                </div>
+            </div>
+            
+            <div class="comparison">
+                <h3 class="comparison-title">Com vs Sem Eco Track</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-card without">
+                        <h4>❌ Sem Eco Track</h4>
+                        <ul>
+                            <li>Consumo descontrolado</li>
+                            <li>Surpresas na conta</li>
+                            <li>Desperdício de recursos</li>
+                            <li>Sem visibilidade de gastos</li>
+                            <li>Impacto ambiental negativo</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card with">
+                        <h4>✅ Com Eco Track</h4>
+                        <ul>
+                            <li>Economia de até 40%</li>
+                            <li>Previsibilidade total</li>
+                            <li>Uso otimizado</li>
+                            <li>Dados em tempo real</li>
+                            <li>Contribuição sustentável</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">Sobre Nós</span>
+                    <h2 class="section-title">Inovação e <span class="gradient-text">Sustentabilidade</span></h2>
+                    
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">🎯</div>
+                            <h3>Nossa Missão</h3>
+                            <p>Democratizar o acesso a tecnologias inteligentes de monitoramento, 
+                            capacitando pessoas e empresas a reduzirem custos e impacto ambiental.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">🔮</div>
+                            <h3>Nossa Visão</h3>
+                            <p>Ser a principal plataforma IoT de gestão de recursos na América Latina, 
+                            transformando o modo como a sociedade consome energia, água e gás.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">💚</div>
+                            <h3>Nossos Valores</h3>
+                            <p>Inovação tecnológica, sustentabilidade, transparência, excelência 
+                            no atendimento e compromisso com resultados mensuráveis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="esg-section">
+                        <h3>Compromisso ESG</h3>
+                        <div class="esg-pillars">
+                            <div class="esg-pillar">
+                                <span class="esg-letter">E</span>
+                                <span class="esg-label">Environmental</span>
+                                <p>Redução de emissões e desperdício</p>
+                            </div>
+                            <div class="esg-pillar">
+                                <span class="esg-letter">S</span>
+                                <span class="esg-label">Social</span>
+                                <p>Educação e inclusão tecnológica</p>
+                            </div>
+                            <div class="esg-pillar">
+                                <span class="esg-letter">G</span>
+                                <span class="esg-label">Governance</span>
+                                <p>Transparência e ética nos dados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="stats-highlight">
+                        <div class="stat-highlight">
+                            <span class="stat-number">50k+</span>
+                            <span class="stat-label">Usuários Ativos</span>
+                        </div>
+                        <div class="stat-highlight">
+                            <span class="stat-number">15M+</span>
+                            <span class="stat-label">kWh Economizados</span>
+                        </div>
+                        <div class="stat-highlight">
+                            <span class="stat-number">2.5M+</span>
+                            <span class="stat-label">m³ Água Poupados</span>
+                        </div>
+                        <div class="stat-highlight">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-label">Redução Média</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#home" class="footer-logo">
+                        <img src="img/logo.png" alt="Eco Track Logo" class="logo-image">
+                        <span>Eco Track</span>
+                    </a>
+                    <p class="footer-description">
+                        Transformando consumo em economia e sustentabilidade através de tecnologia IoT inteligente.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.52-1.53-2.67 0-4.84 2.17-4.84 4.84 0 .38.04.75.13 1.1-4.03-.2-7.6-2.13-9.99-5.06-.42.72-.66 1.55-.66 2.44 0 1.68.86 3.16 2.16 4.03-.8-.03-1.54-.25-2.2-.61v.06c0 2.35 1.67 4.31 3.88 4.76-.41.11-.84.17-1.28.17-.31 0-.62-.03-.92-.08.63 1.95 2.44 3.37 4.6 3.41-1.68 1.32-3.8 2.1-6.1 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.22 7.55 2.22 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Produto</h4>
+                    <ul>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#demonstracao">Demonstração</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#">Integrações</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Status do Sistema</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            contato@ecotrack.com.br
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            0800 123 4567
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            São Paulo, SP - Brasil
+                        </li>
+                    </ul>
+                    <div class="support-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Suporte 24/7 Online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eco Track. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
